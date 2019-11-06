@@ -14,9 +14,9 @@ public class CrapsGame
    */
   public int processRoll(int total)
   {
-
-    __________________________________________
-    ...
+    int win = 1;
+    int loss = -1;
+    
 
     return result;
   }
