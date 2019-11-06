@@ -14,10 +14,20 @@ public class CrapsGame
    */
   public int processRoll(int total)
   {
+    int result;
     int win = 1;
     int loss = -1;
-    
+    if (point == 0){
+      if (total == 2 || total == 3 || total == 12){
+        result = loss;
+      }
+      else if (total == 7 || total == 11){
+        result == win;
+      }
+    }
+    else{
 
+    }
     return result;
   }
 
