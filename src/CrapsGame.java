@@ -22,11 +22,15 @@ public class CrapsGame
         result = loss;
       }
       else if (total == 7 || total == 11){
-        result == win;
+        result = win;
+      }
+      else{
+        point = total;
+        result = point;
       }
     }
     else{
-
+      
     }
     return result;
   }
