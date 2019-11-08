@@ -173,24 +173,24 @@ public class RollingDie extends Die
         break;
       case 4:
         g.fillOval(x1, y1, dotSize, dotSize);
-        g.fillOval(x1, y2, dotSize, dotSize);
+        g.fillOval(x3, y1, dotSize, dotSize);
         g.fillOval(x1, y3, dotSize, dotSize);
-        g.fillOval(x2, y2, dotSize, dotSize);
+        g.fillOval(x3, y3, dotSize, dotSize);
         break;
       case 5:
+        g.fillOval(x2, y2, dotSize, dotSize);
         g.fillOval(x1, y1, dotSize, dotSize);
-        g.fillOval(x1, y2, dotSize, dotSize);
+        g.fillOval(x3, y1, dotSize, dotSize);
         g.fillOval(x1, y3, dotSize, dotSize);
-        g.fillOval(x2, y2, dotSize, dotSize);
-        g.fillOval(x2, y2, dotSize, dotSize);
+        g.fillOval(x3, y3, dotSize, dotSize);
         break;
       case 6:
         g.fillOval(x1, y1, dotSize, dotSize);
-        g.fillOval(x1, y2, dotSize, dotSize);
+        g.fillOval(x3, y1, dotSize, dotSize);
         g.fillOval(x1, y3, dotSize, dotSize);
-        g.fillOval(x2, y2, dotSize, dotSize);
+        g.fillOval(x3, y3, dotSize, dotSize);
         g.fillOval(x2, y1, dotSize, dotSize);
-        g.fillOval(x1, y3, dotSize, dotSize);
+        g.flllOval(x2, y3, dotSize, dotSize);
         break;
     }
   }
