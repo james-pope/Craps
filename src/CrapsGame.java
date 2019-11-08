@@ -17,17 +17,27 @@ public class CrapsGame
     int result = 0;
     int win = 1;
     int loss = -1;
-    if (point == 0){
-      if (total == 2 || total == 3 || total == 12){
+    if (point == 0) {
+      if (total == 2 || total == 3 || total == 12) {
         result = loss;
-      }
-      else if (total == 7 || total == 11){
+        point = 0;
+      } else if (total == 7 || total == 11) {
         result = win;
-      }
-      else{
+        point = 0;
+      } else {
         point = total;
         result = point;
       }
+    }
+    else{
+        if (total == point){
+          result = win;
+          point = 0;
+      }
+        else if (total == 7){
+          result = loss;
+          point = 0;
+        }
     }
     return result;
   }
