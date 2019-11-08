@@ -14,7 +14,7 @@ public class CrapsGame
    */
   public int processRoll(int total)
   {
-    int result;
+    int result = 0;
     int win = 1;
     int loss = -1;
     if (point == 0){
@@ -29,15 +29,9 @@ public class CrapsGame
         result = point;
       }
     }
-    else{
-      
-    }
     return result;
   }
 
-  /**
-   *  Returns the saved point
-   */
   public int getPoint()
   {
     return point;
