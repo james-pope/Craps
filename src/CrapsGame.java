@@ -26,22 +26,17 @@ public class CrapsGame
         point = 0;
       } else {
         point = total;
-        result = point;
+        result = 0;
       }
     }
-    else{
-        if (total == 7){
-          result = loss;
-          point = 0;
+    else {
+      if (total == 7){
+        result = loss;
+        point = 0;
+      } else if (total == point){
+        result = win;
+        point = 0;
       }
-        else if (total == point){
-          result = win;
-          point = 0;
-        }
-        else{
-          point = total;
-          result = point;
-        }
     }
     return result;
   }

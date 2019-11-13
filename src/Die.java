@@ -5,7 +5,7 @@ public class Die {
         dots = 0;
     }
     public void roll(){
-        dots = (int) ((Math.random() * 6)+1);
+        dots = (int) (Math.random() * 6+1);
         System.out.println(dots);
     }
     public int getNumDots(){

@@ -156,7 +156,7 @@ public class RollingDie extends Die
     int y1 = y + step - 1;
     int y2 = y + 3*step;
     int y3 = y + 5*step + 1;
-
+    System.out.println(numDots);
     switch (numDots)
     {
       case 1:
