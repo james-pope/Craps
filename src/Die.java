@@ -1,12 +1,12 @@
 
 public class Die {
     private int dots;
-
+    public Die(){
+        dots = 0;
+    }
     public void roll(){
-        double die1 = (Math.random() * (6-1)+1)-1;
-        double die2 = (Math.random() * (6-1)+1)-1;
-        int result = (int) (die1 + die2);
-        dots = result;
+        dots = (int) ((Math.random() * 6)+1);
+        System.out.println(dots);
     }
     public int getNumDots(){
         return dots;

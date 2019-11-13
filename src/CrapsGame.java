@@ -30,13 +30,17 @@ public class CrapsGame
       }
     }
     else{
-        if (total == point){
-          result = win;
-          point = 0;
-      }
-        else if (total == 7){
+        if (total == 7){
           result = loss;
           point = 0;
+      }
+        else if (total == point){
+          result = win;
+          point = 0;
+        }
+        else{
+          point = total;
+          result = point;
         }
     }
     return result;

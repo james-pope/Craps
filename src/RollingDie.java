@@ -190,7 +190,10 @@ public class RollingDie extends Die
         g.fillOval(x1, y3, dotSize, dotSize);
         g.fillOval(x3, y3, dotSize, dotSize);
         g.fillOval(x2, y1, dotSize, dotSize);
-        g.flllOval(x2, y3, dotSize, dotSize);
+        g.fillOval(x2, y3, dotSize, dotSize);
+        break;
+      default:
+        System.out.println("Error");
         break;
     }
   }
